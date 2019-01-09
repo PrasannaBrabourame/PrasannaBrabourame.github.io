@@ -42,7 +42,7 @@ self.onmessage = function (e) {
                 sum += i;
             if (checkPrime(sum)) {
                 if (sum > max_sum)
-                    max_sum = sum - 2;
+                    max_sum = sum;
             }
             i++;
         }
