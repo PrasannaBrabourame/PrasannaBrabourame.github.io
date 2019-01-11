@@ -35,7 +35,7 @@ self.onmessage = function (e) {
         self.postMessage({ value: sumvalue, type: e.data.type })
     } else if (e.data.type === "sumOfConsecutives") {
         var i = 2;
-        var sum = 0;
+        var sum = 3;
         var max_sum = 0;
         while (sum < Number(e.data.value)) {
             if (checkPrime(i))
