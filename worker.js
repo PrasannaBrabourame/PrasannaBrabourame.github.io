@@ -34,8 +34,8 @@ self.onmessage = function (e) {
         const sumvalue = max.reduce((a, b) => a + b);
         self.postMessage({ value: sumvalue, type: e.data.type })
     } else if (e.data.type === "sumOfConsecutives") {
-        var i = 2;
-        var sum = 3;
+        var i = 3;
+        var sum = 2;
         var max_sum = 0;
         while (sum < Number(e.data.value)) {
             if (checkPrime(i))
